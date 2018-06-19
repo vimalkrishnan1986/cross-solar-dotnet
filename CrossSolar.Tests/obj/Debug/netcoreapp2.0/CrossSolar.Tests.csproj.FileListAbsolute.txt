@@ -1,0 +1,16 @@
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.Tests.deps.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.Tests.runtimeconfig.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.Tests.runtimeconfig.dev.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.Tests.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.Tests.pdb
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\bin\Debug\netcoreapp2.0\CrossSolar.pdb
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.csprojResolveAssemblyReference.cache
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.csproj.CoreCompileInputs.cache
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.AssemblyInfoInputs.cache
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.AssemblyInfo.cs
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar.Tests\obj\Debug\netcoreapp2.0\CrossSolar.Tests.pdb

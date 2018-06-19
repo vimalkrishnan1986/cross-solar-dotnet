@@ -1,0 +1,11 @@
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\bin\Debug\netcoreapp2.0\CrossSolar.deps.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\bin\Debug\netcoreapp2.0\CrossSolar.runtimeconfig.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\bin\Debug\netcoreapp2.0\CrossSolar.runtimeconfig.dev.json
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\bin\Debug\netcoreapp2.0\CrossSolar.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\bin\Debug\netcoreapp2.0\CrossSolar.pdb
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.csproj.CoreCompileInputs.cache
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.AssemblyInfoInputs.cache
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.AssemblyInfo.cs
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.dll
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.pdb
+H:\.Net Projects\cross-solar-dotnet\CrossSolar\obj\Debug\netcoreapp2.0\CrossSolar.csprojResolveAssemblyReference.cache
