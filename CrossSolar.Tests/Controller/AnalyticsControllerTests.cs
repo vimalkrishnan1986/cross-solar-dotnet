@@ -19,7 +19,6 @@ namespace CrossSolar.Tests.Controller
     {
         //mock framework
 
-        private Mock<CrossSolarDbContext> _mockContext = new Mock<CrossSolarDbContext>();
         private AnalyticsController _anlyticsController;
         private PanelController _panelController;
         private IAnalyticsRepository _anlticsReposiitory;
@@ -35,8 +34,8 @@ namespace CrossSolar.Tests.Controller
         }
         public AnalyticsControllerTests()
         {
-            var builder = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(connectionString);
-            var context = new CrossSolarDbContext(builder.Options);
+            var contextOpions = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(connectionString).Options;
+            var context = new CrossSolarDbContext(contextOpions);
             _anlticsReposiitory = new AnalyticsRepository(context);
             _panelRepository = new PanelRepository(context);
             _anlyticsController = new AnalyticsController(_anlticsReposiitory, _panelRepository);
