@@ -12,29 +12,24 @@ using Microsoft.EntityFrameworkCore;
 using System.Transactions;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Hosting;
+using System.Net.Http;
 
 namespace CrossSolar.Tests.Controller
 {
-    public class AnalyticsControllerTests
+    public class AnalyticsControllerTests : UnitTestBase
     {
         //mock framework
+
 
         private AnalyticsController _anlyticsController;
         private PanelController _panelController;
         private IAnalyticsRepository _anlticsReposiitory;
         private IPanelRepository _panelRepository;
-        private string connectionString
+        
+        public AnalyticsControllerTests() : base()
         {
-            get
-
-            {
-                return DbHelper.GetConnectionString();
-
-            }
-        }
-        public AnalyticsControllerTests()
-        {
-            var contextOpions = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(connectionString).Options;
+            var contextOpions = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(ConnectionString).Options;
             var context = new CrossSolarDbContext(contextOpions);
             _anlticsReposiitory = new AnalyticsRepository(context);
             _panelRepository = new PanelRepository(context);

@@ -12,15 +12,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CrossSolar.Tests.Controller
 {
-    public class PanelControllerTests
+    public class PanelControllerTests:UnitTestBase
     {
         private PanelController _panelController;
 
         private IPanelRepository _panelRepository;
 
-        public PanelControllerTests()
+        public PanelControllerTests():base()
         {
-            var builder = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(DbHelper.GetConnectionString());
+            var builder = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(ConnectionString);
             var context = new CrossSolarDbContext(builder.Options);
             _panelRepository = new PanelRepository(context);
             _panelController = new PanelController(_panelRepository);
