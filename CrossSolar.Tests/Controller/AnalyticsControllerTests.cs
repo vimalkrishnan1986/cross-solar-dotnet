@@ -19,14 +19,19 @@ namespace CrossSolar.Tests.Controller
 {
     public class AnalyticsControllerTests : UnitTestBase
     {
-        //mock framework
+
 
 
         private AnalyticsController _anlyticsController;
         private PanelController _panelController;
         private IAnalyticsRepository _anlticsReposiitory;
         private IPanelRepository _panelRepository;
-        
+
+
+        static DateTime date1 = new DateTime(2017, 11, 05);
+        static DateTime date1_t1 = date1.AddHours(1);
+        static DateTime date1_t2 = date1.AddHours(2);
+
         public AnalyticsControllerTests() : base()
         {
             var contextOpions = new DbContextOptionsBuilder<CrossSolarDbContext>().UseSqlServer(ConnectionString).Options;
@@ -43,12 +48,6 @@ namespace CrossSolar.Tests.Controller
         {
 
             //insert pannel
-
-            DateTime date1 = new DateTime(2017, 11, 05);
-            DateTime date1_t1 = date1.AddHours(1);
-            DateTime date1_t2 = date1.AddHours(2);
-
-
             var panel = new PanelModel
             {
                 Brand = "Areva",
@@ -97,6 +96,19 @@ namespace CrossSolar.Tests.Controller
             Assert.Equal(200, day1Record.Maximum);
 
 
+        }
+
+        [Fact]
+        public async void AnalyticsControllerTests_Post()
+        {
+            int panelId = -1;//invalid panelid
+
+            var res = await _anlyticsController.Post(panelId, new OneHourElectricityModel()
+            {
+                KiloWatt = 100,
+                DateTime = date1_t1
+            });
+            Assert.IsType<UnauthorizedResult>(res);
         }
     }
 }

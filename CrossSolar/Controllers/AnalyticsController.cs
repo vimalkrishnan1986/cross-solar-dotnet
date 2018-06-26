@@ -91,6 +91,11 @@ namespace CrossSolar.Controllers
                 return BadRequest(ModelState);
             }
 
+            if (_panelRepository.Query().Where(p => p.Id == panelId).SingleOrDefault() == null)
+            {
+                return new UnauthorizedResult();
+
+            }
             var oneHourElectricityContent = new OneHourElectricity
             {
                 PanelId = panelId,
