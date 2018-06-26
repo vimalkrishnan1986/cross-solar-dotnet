@@ -24,7 +24,7 @@ namespace CrossSolar.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return BadRequest(ModelState.ErrorCount);
             }
 
             var panel = new Panel
